@@ -1,0 +1,1 @@
+export default function App(){return <h1>JEE Mock Test Maker</h1>}
