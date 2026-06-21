@@ -6,4 +6,6 @@ export default function App() {
   );
 }
 
+cd frontend
 
+npm run dev
