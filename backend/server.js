@@ -12,3 +12,6 @@ mongoose.connect(process.env.MONGO_URI);
 app.listen(5000, () => {
  console.log("Server Running");
 });
+cd backend
+
+node server.js
