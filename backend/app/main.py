@@ -14,3 +14,9 @@ app.add_middleware(
 @app.get("/")
 async def root():
     return {"status": "ok", "message": "JEE Mock Test Maker backend is running"}
+
+cd backend
+
+npm init -y
+
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
