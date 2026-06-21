@@ -5,3 +5,6 @@ export default function App() {
     </main>
   );
 }
+
+npx create-next-app@latest .
+  
