@@ -60,10 +60,41 @@ sudo systemctl start mongod
 sudo systemctl enable mongod
 ```
 
+## Getting Started
+
+✅ **Node.js is installed on your PC**  
+✅ **MongoDB Community Server is installed on your PC**
+
+You're now ready to start developing! Follow the steps below to set up and run the project.
+
+### Installation Steps
+
+1. **Clone the repository** (if you haven't already):
+   ```bash
+   git clone https://github.com/Shashankkharadi/Jee-mock-test-maker-website.git
+   cd Jee-mock-test-maker-website
+   ```
+
+2. **Set up environment variables**:
+   ```bash
+   cp .env.example .env
+   ```
+   Fill in the required values in the `.env` file.
+
+3. **Ensure MongoDB is running**:
+   - **Windows**: MongoDB should be running as a service. Start it via Services if needed.
+   - **macOS**: `brew services start mongodb-community`
+   - **Linux**: `sudo systemctl start mongod`
+
+4. **Verify MongoDB is running**:
+   ```bash
+   mongosh
+   ```
+   If the MongoDB shell connects successfully, MongoDB is ready.
+
 ## Quickstart
 
-1. cp .env.example .env and fill values
-2. Build and run with Docker Compose (recommended):
+### Option 1: Using Docker Compose (Recommended)
 
 ```bash
 docker compose build
@@ -72,17 +103,19 @@ docker compose up -d
 
 > Note: `docker-compose.yml` uses Compose V2 syntax and does not require a top-level `version` field.
 
-3. OR run locally without Docker:
+### Option 2: Run Locally without Docker
 
 ```bash
-# Frontend
+# Frontend (in terminal 1)
 cd frontend
 npm install
 npm run build
 npm start
 
-# Backend (in a separate terminal)
+# Backend (in terminal 2)
 cd backend
 python -m pip install -r requirements.txt
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
+
+Your application should now be running! 🚀
