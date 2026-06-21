@@ -119,3 +119,76 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
 Your application should now be running! 🚀
+
+## Project Structure
+
+```
+Jee-mock-test-maker-website/
+├── frontend/                       # Next.js 14 frontend application
+│   ├── app/                        # App Router directory
+│   │   ├── layout.tsx             # Root layout
+│   │   ├── page.tsx               # Home page
+│   │   ├── (auth)/                # Auth routes group
+│   │   │   ├── login/page.tsx
+│   │   │   └── register/page.tsx
+│   │   ├── (dashboard)/           # Dashboard routes group
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── tests/page.tsx
+│   │   │   ├── analytics/page.tsx
+│   │   │   └── settings/page.tsx
+│   │   └── api/                   # API routes
+│   │       └── [...slug].ts
+│   ├── components/                # React components
+│   │   ├── common/               # Shared components
+│   │   ├── auth/                 # Auth components
+│   │   ├── test/                 # Test-related components
+│   │   └── ui/                   # UI components
+│   ├── hooks/                     # Custom React hooks
+│   ├── lib/                       # Utility functions
+│   │   ├── api.ts               # API client
+│   │   ├── auth.ts              # Auth utilities
+│   │   └── utils.ts             # Helper functions
+│   ├── styles/                    # Global styles
+│   ├── public/                    # Static assets
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── next.config.js
+│
+├── backend/                       # FastAPI backend application
+│   ├── app/
+│   │   ├── main.py               # FastAPI app entry point
+│   │   ├── config.py             # Configuration settings
+│   │   ├── database.py           # Database connection
+│   │   ├── models/               # Pydantic models
+│   │   │   ├── user.py
+│   │   │   ├── test.py
+│   │   │   └── question.py
+│   │   ├── routes/               # API endpoints
+│   │   │   ├── auth.py
+│   │   │   ├── tests.py
+│   │   │   ├── questions.py
+│   │   │   └── users.py
+│   │   ├── services/             # Business logic
+│   │   │   ├── test_service.py
+│   │   │   ├── user_service.py
+│   │   │   └── analytics_service.py
+│   │   ├── schemas/              # Request/response schemas
+│   │   └── middleware/           # Custom middleware
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── docker-compose.yml            # Docker Compose configuration
+├── .env.example                  # Environment variables template
+├── .gitignore
+└── README.md                      # This file
+```
+
+### Key Directories Explained
+
+- **frontend/app**: Contains all Next.js pages and layouts using App Router
+- **frontend/components**: Reusable React components organized by feature
+- **frontend/lib**: Utility functions, API clients, and helper functions
+- **backend/app**: FastAPI application structure with routes and services
+- **backend/app/routes**: API endpoint handlers for different features
+- **backend/app/services**: Business logic and database operations
