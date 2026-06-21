@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "q001",
+    "exam": "JEE Main",
+    "subject": "Physics",
+    "chapter": "Vectors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "PYQ",
+    "prompt": "A vector has components 3i + 4j. Its magnitude is?",
+    "options": ["3", "4", "5", "7"],
+    "answer": "5",
+    "solution": "Magnitude = √(3² + 4²) = √(9 + 16) = √25 = 5"
+  },
+  {
+    "_id": "q002",
+    "exam": "JEE Main",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "PYQ",
+    "prompt": "The maximum number of electrons in the third shell is?",
+    "options": ["8", "18", "32", "2"],
+    "answer": "18",
+    "solution": "Maximum electrons in nth shell = 2n². For n=3: 2(3)² = 18"
+  },
+  {
+    "_id": "q003",
+    "exam": "JEE Main",
+    "subject": "Mathematics",
+    "chapter": "Quadratic Equations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "PYQ",
+    "prompt": "Solve: x² - 5x + 6 = 0",
+    "options": ["x=1,2", "x=2,3", "x=3,4", "x=1,3"],
+    "answer": "x=2,3",
+    "solution": "x² - 5x + 6 = (x-2)(x-3) = 0, so x = 2 or x = 3"
+  }
+]
