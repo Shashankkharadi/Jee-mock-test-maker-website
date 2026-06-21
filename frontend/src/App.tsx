@@ -6,5 +6,4 @@ export default function App() {
   );
 }
 
-npx create-next-app@latest .
-  
+
