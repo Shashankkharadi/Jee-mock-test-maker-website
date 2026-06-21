@@ -192,3 +192,22 @@ Jee-mock-test-maker-website/
 - **backend/app**: FastAPI application structure with routes and services
 - **backend/app/routes**: API endpoint handlers for different features
 - **backend/app/services**: Business logic and database operations
+
+smart-mock-test-maker/
+
+├── frontend/
+│   ├── pages/
+│   ├── components/
+│   ├── styles/
+│   ├── public/
+│   └── services/
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   └── server.js
+│
+└── database/
+    └── mongodb collections
