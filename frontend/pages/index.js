@@ -83,3 +83,35 @@ export default function Home() {
     </div>
   );
 }
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+
+      <nav className="p-6 flex justify-between">
+        <h1 className="text-3xl font-bold">
+          Smart Mock Test Maker
+        </h1>
+
+        <div>
+          <Link href="/login">Login</Link>
+        </div>
+      </nav>
+
+      <section className="text-center mt-20">
+        <h2 className="text-6xl font-bold">
+          Create Smart Mock Tests
+        </h2>
+
+        <p className="mt-5 text-xl">
+          JEE • NEET • CUET • Boards
+        </p>
+
+        <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg mt-10">
+          Start Test
+        </button>
+      </section>
+    </div>
+  );
+}
