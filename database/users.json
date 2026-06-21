@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "123",
+    "name": "Shashank",
+    "email": "shashankkharadi91@gmail.com",
+    "hashed_pass": "$2b$10$abcdefghijklmnopqrstuvwxyz",
+    "created_at": "2024-01-15T10:30:00Z",
+    "updated_at": "2024-01-15T10:30:00Z",
+    "preferences": {
+      "theme": "dark",
+      "notifications": true
+    }
+  },
+  {
+    "_id": "124",
+    "name": "Arjun Sharma",
+    "email": "arjun.sharma@example.com",
+    "hashed_pass": "$2b$10$hijklmnopqrstuvwxyzabcde",
+    "created_at": "2024-01-16T09:15:00Z",
+    "updated_at": "2024-01-16T09:15:00Z",
+    "preferences": {
+      "theme": "light",
+      "notifications": false
+    }
+  }
+]
