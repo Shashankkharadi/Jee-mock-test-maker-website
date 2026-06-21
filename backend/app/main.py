@@ -1,6 +1,16 @@
-
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="JEE Mock Test Maker")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.get("/")
-def root():
-    return {"status":"ok"}
+async def root():
+    return {"status": "ok", "message": "JEE Mock Test Maker backend is running"}
