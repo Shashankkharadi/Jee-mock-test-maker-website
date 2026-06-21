@@ -1,0 +1,21 @@
+Users
+  </> JSON
+  {
+  "_id":"123",
+  "name":"Shashank",
+  "email":"shashankkharadi91@gmail.com",
+  "password":"Hashirama@77"
+}
+
+Questions 
+  {
+  "exam":"JEE Main",
+  "subject":"Physics",
+  "chapter":"Vectors",
+  "difficulty":"Hard",
+  "question":"Question Here",
+  "options":["A","B","C","D"],
+  "answer":"B",
+  "solution":"Detailed Solution",
+  "source":"PYQ"
+}
